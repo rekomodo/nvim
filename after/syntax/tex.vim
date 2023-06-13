@@ -1,0 +1,1 @@
+hi Conceal ctermbg=none
