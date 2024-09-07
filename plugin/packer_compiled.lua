@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/komodo/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/komodo/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/komodo/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/komodo/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/komodo/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/var/home/rekomodo/distro_homes/arch/.cache/nvim/packer_hererocks/2.1.1723675123/share/lua/5.1/?.lua;/var/home/rekomodo/distro_homes/arch/.cache/nvim/packer_hererocks/2.1.1723675123/share/lua/5.1/?/init.lua;/var/home/rekomodo/distro_homes/arch/.cache/nvim/packer_hererocks/2.1.1723675123/lib/luarocks/rocks-5.1/?.lua;/var/home/rekomodo/distro_homes/arch/.cache/nvim/packer_hererocks/2.1.1723675123/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/var/home/rekomodo/distro_homes/arch/.cache/nvim/packer_hererocks/2.1.1723675123/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,49 +77,49 @@ _G.packer_plugins = {
   ["deoplete.nvim"] = {
     config = { "\27LJ\2\n<\0\0\2\0\3\0\0056\0\0\0009\0\1\0)\1\1\0=\1\2\0K\0\1\0\31deoplete#enable_at_startup\6g\bvim\0" },
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
     url = "https://github.com/shougo/deoplete.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-lua/telescope.nvim"
   },
   ultisnips = {
     config = { "\27LJ\2\nŸ\1\0\0\2\0\a\0\r6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\3\0=\1\4\0006\0\0\0009\0\1\0'\1\6\0=\1\5\0K\0\1\0\f<s-tab>!UltiSnipsJumpBackwardTrigger UltiSnipsJumpForwardTrigger\n<tab>\27UltiSnipsExpandTrigger\6g\bvim\0" },
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/ultisnips",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/ultisnips",
     url = "https://github.com/sirver/ultisnips"
   },
   ["vim-ripgrep"] = {
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/vim-ripgrep",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/vim-ripgrep",
     url = "https://github.com/jremmen/vim-ripgrep"
   },
   vimtex = {
     loaded = true,
     needs_bufread = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/opt/vimtex",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/opt/vimtex",
     url = "https://github.com/lervag/vimtex"
   },
   wal = {
     loaded = true,
-    path = "/home/komodo/.local/share/nvim/site/pack/packer/start/wal",
+    path = "/var/home/rekomodo/distro_homes/arch/.local/share/nvim/site/pack/packer/start/wal",
     url = "https://github.com/dylanaraps/wal"
   }
 }
@@ -127,19 +127,19 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Setup for: vimtex
 time([[Setup for vimtex]], true)
-try_loadstring("\27LJ\2\n´\1\0\0\2\0\t\0\0176\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\5\0)\1\2\0=\1\6\0006\0\0\0009\0\1\0005\1\b\0=\1\a\0K\0\1\0\1\0\1\19math_super_sub\3\0\26vimtex_syntax_conceal\tcole\bopt\25vimtex_quickfix_mode\fzathura\23vimtex_view_method\6g\bvim\0", "setup", "vimtex")
+try_loadstring("\27LJ\2\n»\1\0\0\2\0\t\0\0176\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\5\0)\1\2\0=\1\6\0006\0\0\0009\0\1\0005\1\b\0=\1\a\0K\0\1\0\1\0\1\19math_super_sub\3\0\26vimtex_syntax_conceal\tcole\bopt\25vimtex_quickfix_mode\19zathura_simple\23vimtex_view_method\6g\bvim\0", "setup", "vimtex")
 time([[Setup for vimtex]], false)
 time([[packadd for vimtex]], true)
 vim.cmd [[packadd vimtex]]
 time([[packadd for vimtex]], false)
--- Config for: deoplete.nvim
-time([[Config for deoplete.nvim]], true)
-try_loadstring("\27LJ\2\n<\0\0\2\0\3\0\0056\0\0\0009\0\1\0)\1\1\0=\1\2\0K\0\1\0\31deoplete#enable_at_startup\6g\bvim\0", "config", "deoplete.nvim")
-time([[Config for deoplete.nvim]], false)
 -- Config for: ultisnips
 time([[Config for ultisnips]], true)
 try_loadstring("\27LJ\2\nŸ\1\0\0\2\0\a\0\r6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\3\0=\1\4\0006\0\0\0009\0\1\0'\1\6\0=\1\5\0K\0\1\0\f<s-tab>!UltiSnipsJumpBackwardTrigger UltiSnipsJumpForwardTrigger\n<tab>\27UltiSnipsExpandTrigger\6g\bvim\0", "config", "ultisnips")
 time([[Config for ultisnips]], false)
+-- Config for: deoplete.nvim
+time([[Config for deoplete.nvim]], true)
+try_loadstring("\27LJ\2\n<\0\0\2\0\3\0\0056\0\0\0009\0\1\0)\1\1\0=\1\2\0K\0\1\0\31deoplete#enable_at_startup\6g\bvim\0", "config", "deoplete.nvim")
+time([[Config for deoplete.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

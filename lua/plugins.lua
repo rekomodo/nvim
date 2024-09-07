@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
 		'lervag/vimtex',
 		---[[
 		setup = function()
-			vim.g.vimtex_view_method = 'zathura'
+			vim.g.vimtex_view_method = 'zathura_simple'
 			vim.g.vimtex_quickfix_mode = 0
 			vim.opt.cole=2
 			vim.g.vimtex_syntax_conceal = {math_super_sub = 0}
